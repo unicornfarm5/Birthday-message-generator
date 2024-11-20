@@ -1,0 +1,120 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightskyblue;
+    height: 250px;
+    border-radius: 10px;
+    font-size: x-large;
+    /* fra ChatGPT - forhindrer billeder i at rykke udenfor header når billeder bliver mindre*/
+        flex-wrap: nowrap;
+        padding: 0 20px;
+        overflow: hidden;
+}
+header img {
+    /*fra ChatGPT - skrumper billederne ved mindre skærm */
+        max-height: 150px;
+        max-width: 100%;
+        flex-shrink: 1;
+}
+
+#intro {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 5px;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#content img {
+    height: 500px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header li{
+    display: flex;
+    list-style-type: none;
+    margin: 15px;
+}
+
+header ul {
+    display: flex;
+    margin: 5px;
+}
+header li img {
+    height: 180px;
+}
+
+#user-choices {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+
+#generate-message {
+    background-color: lightskyblue;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 20px;
+    border: deepskyblue;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-choices-elements {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: stretch;
+    font-size: large;
+}
+
+
+#waiting-message {
+    font-size: x-large;
+    display:flex;
+}
+
+#response {
+    padding: 15px;
+    font-size: large;
+    width: 600px;
+}
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    font-size: large;
+    margin-top: 200px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
